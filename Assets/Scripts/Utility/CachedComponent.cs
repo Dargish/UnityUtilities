@@ -2,12 +2,18 @@
 
 public class CachedComponent<T> where T : Component
 {
-    GameObject gameObject;
+    GameObject gameObject_;
     T component;
+
+    public GameObject gameObject
+    {
+        get { return gameObject_; }
+        set { gameObject_ = value; component = null; }
+    }
 
     public CachedComponent(GameObject gameObject)
     {
-        this.gameObject = gameObject;
+        gameObject_ = gameObject;
     }
 
     public T get()
