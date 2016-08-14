@@ -4,3 +4,4 @@ obj
 *.meta
 *.suo
 *.sln
+*.csproj
