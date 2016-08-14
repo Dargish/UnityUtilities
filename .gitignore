@@ -2,3 +2,5 @@ Temp
 Library
 obj
 *.meta
+*.suo
+*.sln
